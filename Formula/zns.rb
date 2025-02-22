@@ -5,21 +5,21 @@
 class Zns < Formula
   desc "A CLI tool for querying DNS records with readable, colored output."
   homepage "https://github.com/znscli/zns"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/znscli/zns/releases/download/v0.1.0/zns_0.1.0_darwin_amd64.tar.gz"
-      sha256 "b5b1637c6bfa519dd103b0b01bcc9ad941d974279a07d04d1c16b3dd50bf6a48"
+      url "https://github.com/znscli/zns/releases/download/v0.2.0/zns_0.2.0_darwin_amd64.tar.gz"
+      sha256 "7681251761de3c709c8e38b3dcfdccb75a9a853d68d82009c69c7b9fe5a8f920"
 
       def install
         bin.install "zns"
       end
     end
     on_arm do
-      url "https://github.com/znscli/zns/releases/download/v0.1.0/zns_0.1.0_darwin_arm64.tar.gz"
-      sha256 "0b95a555d0806de4a2528d4e3329e5ed57f57105ca68c618537c62cd0a6450f5"
+      url "https://github.com/znscli/zns/releases/download/v0.2.0/zns_0.2.0_darwin_arm64.tar.gz"
+      sha256 "7472063c1e40618533c5be006b7fbff33025952b0ff6f956a65b2151eb45696b"
 
       def install
         bin.install "zns"
@@ -30,8 +30,8 @@ class Zns < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/znscli/zns/releases/download/v0.1.0/zns_0.1.0_linux_amd64.tar.gz"
-        sha256 "833c159887ff8daeea7f60904278441371da5a520256c96a309f51a3d0f3cf35"
+        url "https://github.com/znscli/zns/releases/download/v0.2.0/zns_0.2.0_linux_amd64.tar.gz"
+        sha256 "71421cef2d732d731c25d2eb077df1ebe87e5f8c706c1e8fa2a545791aa6056d"
 
         def install
           bin.install "zns"
@@ -40,8 +40,8 @@ class Zns < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/znscli/zns/releases/download/v0.1.0/zns_0.1.0_linux_arm64.tar.gz"
-        sha256 "3720b1eb4bce94c7f5965d08630d559ae7fda48c46942ce1b3fae1cb651fc8d0"
+        url "https://github.com/znscli/zns/releases/download/v0.2.0/zns_0.2.0_linux_arm64.tar.gz"
+        sha256 "f2b4fbcebe82e2ea1ad1d6d0bdb89a7981b2481677ca9a22e3688c3b2bdea35c"
 
         def install
           bin.install "zns"
